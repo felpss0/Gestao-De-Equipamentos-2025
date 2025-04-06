@@ -4,6 +4,8 @@
     {
         public Chamado[] controle = new Chamado[100];
         public int contadorChamados = 0;
+
+        
         public void RegistrarChamado() 
         {
             Console.WriteLine("----------------------------------------");
@@ -155,8 +157,9 @@
                 "{0, -10} | {1, -20} | {2, -11} | {3, -15} | {4, -15} | {5, -10}",
                 c.Id, c.Titulo, c.Descricao, c.ObterNumeroChamado(), c.Equipamento, c.DataAbertura
                 );
-
-
+                
+                Console.WriteLine($"O chamado está aberto há {c.DiasAberto()} dias.");
+                
             }
 
             Console.WriteLine();

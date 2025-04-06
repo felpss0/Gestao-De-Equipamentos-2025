@@ -21,5 +21,10 @@
 
             return $"{tresPrimeirosCaracteres}-{Id}";
         }
+
+        public int DiasAberto()
+        {
+            return (DateTime.Now - DataAbertura).Days;
+        }
     }
 }
